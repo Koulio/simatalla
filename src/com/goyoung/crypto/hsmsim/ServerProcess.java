@@ -13,9 +13,12 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Properties;
 
+
+
 //this class represents the TCP/IP service process for the simulator
 public class ServerProcess {
-	
+
+
 	//static properties
 	public static String s_port;
 	public static String s_bindIP;

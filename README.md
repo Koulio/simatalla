@@ -27,5 +27,15 @@ $ telnet localhost 7000
 // double length key for 2TDEA 3DES encrypted by MFK.variant.1 (leftmost
 and KEK.variant.1 with char Key Check Value (rightmost), and KCV at the right end
 
+Example:
+
+$ telnet localhost 7000
+Trying ::1...
+Connected to localhost.
+Escape character is '^]'.
+<10#4##D#>
+<20#D3E07B0C441E1F9E52CB063D3592F05B##DD1B#>
+
+
 ```
 
