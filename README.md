@@ -9,9 +9,13 @@ config.properties contains runtime settings and master keys
 
 Sample usage:
 ```
+build:
+$ mvn cleean package
+
 Start the HSM Simulator as follows:
 from a command prompt:
-Java -cp {path to jar file}/simatalla-0.0.1-SNAPSHOT.jar com.goyoung.crypto.hsmsim.ServerProcess
+
+$ Java -cp ./target/simatalla-0.0.1-SNAPSHOT-standalone.jar com.goyoung.crypto.hsmsim.ServerProcess
 
 1. User telnets to IP specified in the properties file 
 $ telnet localhost 7000
