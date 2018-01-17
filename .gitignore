@@ -1,0 +1,8 @@
+./bin/
+./target/
+.classpath
+.project
+.idea
+.DS_Store
+simatalla.iml
+
