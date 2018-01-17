@@ -88,7 +88,7 @@
           <configuration>
             <transformers>
               <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                <mainClass>com.goyoung.crypto.hsmsim.ServerProcess.main</mainClass>
+                <mainClass>com.goyoung.crypto.hsmsim.ServerProcess</mainClass>
               </transformer>
             </transformers>
             <filters>
