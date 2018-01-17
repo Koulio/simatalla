@@ -10,7 +10,7 @@ config.properties contains runtime settings and master keys
 Sample usage:
 ```
 build:
-$ mvn cleean package
+$ mvn clean package
 
 Start the HSM Simulator as follows:
 from a command prompt:
