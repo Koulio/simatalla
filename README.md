@@ -3,7 +3,7 @@
 HSM "Variant Mode" personality.
  --KeyBlock mode may be added some day
 
-Is a POJO java service that simulates a popular Hardware Security Module. 
+Is a Java process that simulates a popular Hardware Security Module. 
 A class called `ServerProcess` starts a plain-text TCP Service process to emulate HSM Request/Response. 
 config.properties contains runtime settings and master keys
 
@@ -13,8 +13,9 @@ Start the HSM Simulator as follows:
 from a command prompt:
 Java -cp {path to jar file}/simatalla-0.0.1-SNAPSHOT.jar com.goyoung.crypto.hsmsim.ServerProcess
 
-1. User telnets to IP specified in the properties file // $ telnet localhost 7000
-2. User sends a command 10			   : <10#4##D#>         // request to generate double length key for 2TDEA TripleDES
+1. User telnets to IP specified in the properties file 
+$ telnet localhost 7000
+2. User sends a command 10: <10#4##D#>  // request to generate double length key for 2TDEA TripleDES
 3. User receives command 10 response (20): <20#F6DFEAAD648A7A17E5A9CE0796440D9D##63E0#>   
 // response of double length key for 2TDEA 3DES  //key is not encrypted by any master key, 
 //response contains a 4 char Key Check Value, KCV at the end
