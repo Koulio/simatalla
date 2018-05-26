@@ -17,6 +17,8 @@ from a command prompt:
 
 $ Java -cp ./target/simatalla-0.0.1-SNAPSHOT-standalone.jar com.goyoung.crypto.hsmsim.ServerProcess
 
+[boot](./doc/boot.png)    
+
 1. User telnets to IP specified in the properties file 
 $ telnet localhost 7000
 2. User sends a command 10: <10#4##D#>  // request to generate double length key for 2TDEA TripleDES
@@ -29,17 +31,19 @@ $ telnet localhost 7000
 //Provided KEK previously encrypted under variant 0 of MFK
 5. User receives command 10 response (20): <20#6CEDF649AAA492B90F909AD3A6D2D54F#64B343D9C5AB8C8692122EFDA11D62F6#07CB#>
 // double length key for 2TDEA 3DES encrypted by MFK.variant.1 (leftmost
-and KEK.variant.1 with char Key Check Value (rightmost), and KCV at the right end
+and KEK.variant.1 with char Key Check Value (rightmost), and KCV at the right end     
 
-Example:
+[command 10](./docs/command10.png)    
 
+
+Example:    
+
+```bash
 $ telnet localhost 7000
 Trying ::1...
 Connected to localhost.
 Escape character is '^]'.
 <10#4##D#>
 <20#D3E07B0C441E1F9E52CB063D3592F05B##DD1B#>
-
-
 ```
 
