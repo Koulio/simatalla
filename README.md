@@ -17,7 +17,7 @@ from a command prompt:
 
 $ Java -cp ./target/simatalla-0.0.1-SNAPSHOT-standalone.jar com.goyoung.crypto.hsmsim.ServerProcess
 ```    
-[boot](./doc/boot.png)    
+![boot](./doc/boot.png)    
     
 ```    
 1. User telnets to IP specified in the properties file 
@@ -36,7 +36,7 @@ and KEK.variant.1 with char Key Check Value (rightmost), and KCV at the right en
 
 Example:    
 ```    
-[command 10](./docs/command10.png)
+![command 10](./docs/command10.png)
 
 
 ```bash
