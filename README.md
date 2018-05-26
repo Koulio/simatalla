@@ -16,9 +16,10 @@ Start the HSM Simulator as follows:
 from a command prompt:
 
 $ Java -cp ./target/simatalla-0.0.1-SNAPSHOT-standalone.jar com.goyoung.crypto.hsmsim.ServerProcess
-
+```    
 [boot](./doc/boot.png)    
-
+    
+```    
 1. User telnets to IP specified in the properties file 
 $ telnet localhost 7000
 2. User sends a command 10: <10#4##D#>  // request to generate double length key for 2TDEA TripleDES
@@ -33,10 +34,10 @@ $ telnet localhost 7000
 // double length key for 2TDEA 3DES encrypted by MFK.variant.1 (leftmost
 and KEK.variant.1 with char Key Check Value (rightmost), and KCV at the right end     
 
-[command 10](./docs/command10.png)    
-
-
 Example:    
+```    
+[command 10](./docs/command10.png)
+
 
 ```bash
 $ telnet localhost 7000
