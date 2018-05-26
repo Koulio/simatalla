@@ -17,7 +17,7 @@ from a command prompt:
 
 $ Java -cp ./target/simatalla-0.0.1-SNAPSHOT-standalone.jar com.goyoung.crypto.hsmsim.ServerProcess
 ```    
-![boot](./doc/boot.png)    
+![boot](./docs/boot.png)    
     
 ```    
 1. User telnets to IP specified in the properties file 
